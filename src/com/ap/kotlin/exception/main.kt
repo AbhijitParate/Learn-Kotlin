@@ -3,13 +3,8 @@ package com.ap.kotlin.exception
 fun main(args: Array<String>) {
 
     try {
-        print("Value 1 :")
-        val v1 = readLine()
-        val d1 = v1!!.toDouble()
-
-        print("Value 2 :")
-        val v2 = readLine()
-        val d2 = v2!!.toDouble()
+        val d1 = getInput("Value 1: ")
+        val d2 = getInput("Value 2: ")
 
         val sum = d1 + d2
         println("sum = $sum")
@@ -25,4 +20,10 @@ fun main(args: Array<String>) {
         println(e.message)
     }
 
+}
+
+private fun getInput(prompt: String): Double {
+    print(prompt)
+    val v1 = readLine()
+    return v1!!.toDouble()
 }
