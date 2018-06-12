@@ -1,4 +1,4 @@
-package init
+package com.ap.kotlin.init
 
 fun main(args: Array<String>){
     println("Hello, " + args[0])
