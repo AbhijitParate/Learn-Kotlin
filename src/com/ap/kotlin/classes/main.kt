@@ -10,7 +10,7 @@ fun main(args: Array<String>) {
         println("Running total : ${runningTotal.runningTotal}")
     }
 
-    println("Weekday ENUM : ${Weekdays.MON}")
+    println("Weekday ENUM : ${Weekday.MON}")
 
     println("Month ENUM : ${Month.JAN}")
     println("Month ENUM->Value : ${Month.JAN.month}")
